@@ -1,0 +1,8 @@
+h1 {
+  font-size: 36px; }
+
+.page-header {
+  color: black; }
+  .page-header .page-header__wrapper {
+    font-size: 30px;
+    font-weight: 500; }
