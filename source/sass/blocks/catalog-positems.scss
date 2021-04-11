@@ -1,0 +1,43 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 210px;
+}
+
+.catalog__list_left {
+    padding-left: 0;
+    padding-top: 58px;
+    margin-left: -79px; 
+}
+
+.additional__container {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.additional__wrapper {
+    position: relative;
+}
+
+.hr_catalog {
+    position: absolute;
+    top: -27px;
+    left: 4px;
+    width: 306px;
+}
+
+
+.catalog__list_right {
+    padding-top: 58px;
+    padding-left: 78px;
+}
+
+.catalog_hr {
+    position: absolute;
+    top: 173px;
+    width: 311px;
+}

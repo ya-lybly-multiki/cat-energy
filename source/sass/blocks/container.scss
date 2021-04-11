@@ -6,12 +6,13 @@
     list-style-type: none;
     padding-left: 0;
     position: relative;
-    .instruction__text {
-        position: absolute;
-        transform: translateY(-185%);
-        left: 89px;
-    } 
 }
+
+.instruction__text {
+    position: absolute;
+    transform: translateY(-185%);
+    left: 89px;
+} 
 
 
 .instruction__illustration {

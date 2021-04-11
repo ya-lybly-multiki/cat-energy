@@ -15,7 +15,7 @@
     position: absolute;
 }
 
-.circle {
+.catalog__circle {
     position: absolute;
     background-color: #008000;
     width: 50px;
@@ -31,50 +31,14 @@
     mix-blend-mode: multiply;
 }
 
-.img_top {
-    top: 10px;
-    left: 30px;           
-}
-
-.img_bottom {
-    top: 22px;
-    left: 8px; 
-}
-
-.text_top {
-    width: 225px;
-    margin-left: 19px;
-    margin-top: 26px;
-}
-
-.text_down {
-    width: 225px;
-    margin-left: 19px;
-    margin-top: 44px;
-}
-
-.headline_top {
-    top: -2px;
-    left: 86px;
-}
-
-.headline_bottom {
-    top: -2px;
-    left: 86px;
-}
-
-.hr {
-    width: 240px;
-    height: 1px;
-    position: absolute;
-    opacity: 30%;
-    bottom: 37px;
-    left: 20px;
-}
-
 .catalog__excerpt {
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
 
+.catalog__link-img {
+    position: absolute;
+    left: 114px;
+    bottom: 16px;
+}
