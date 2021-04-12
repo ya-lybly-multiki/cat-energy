@@ -1,0 +1,29 @@
+.instruction__list {
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.instruction__text {
+    position: absolute;
+    transform: translateY(-185%);
+    left: 89px;
+} 
+
+
+.instruction__illustration {
+    width: 60px;
+    height: 60px;
+    background-color: #2E8B57;
+    left: 10px;
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+
+.instruction__image {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
