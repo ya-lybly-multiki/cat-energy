@@ -1,3 +1,7 @@
+.additional__wrapper {
+    position: relative;
+}
+
 .additional__green-line {
     position: absolute;
     top: 13px;
@@ -9,6 +13,8 @@
     font-size: 16px;
     font-weight: 500;
     padding-left: 11px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .additional__line {
@@ -16,34 +22,25 @@
     top: -7px;
     width: 280px;
     left: 12px;
+    
 }
 
-
-.subtitle_left {
-    padding-top: 20px;
-  
+.additional__container {
+    display: flex;
+    flex-direction: column;
 }
 
-.subtitle_right {
-    padding-top: 20px;
+.additional__items {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 25px;
 }
 
-.left_1 {
-    margin-left: -142px;
-    margin-right: 139px;
+.additional__title {
+    padding-left: 10px;
 }
 
-.left_2 {
-    margin-left: -110px;
-    margin-right: 195px;
-}
-
-.left_3 {
-    margin-left: -58px;
-    margin-right: 207px;
-}
-
-.left_4 {
-    margin-left: -77px;
-    margin-right: 144px;
+.line_top {
+    top: -17px;
 }

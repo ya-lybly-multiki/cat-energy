@@ -1,5 +1,5 @@
-var mainNav = document.querySelector(".main-nav");
-var navToggle = document.querySelector(".main-nav__toggle");
+const mainNav = document.querySelector(".main-nav");
+const navToggle = document.querySelector(".main-nav__toggle");
 
 if (navToggle) {
   navToggle.classList.remove("main-nav__toggle--hidden");
