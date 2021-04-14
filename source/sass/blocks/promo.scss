@@ -8,6 +8,12 @@
     width: 280px;
 }
 
+.catalog__programm {
+    position: relative;
+    background-color: #D3D3D3;
+    width: 280px;
+    height: 230px; }
+
 .promo__rectagle {
     position: relative;
     width: 120px;
@@ -40,3 +46,58 @@
     font-weight: 400;
 }
 
+.promo__rectagle_weight {
+    top: 34%;
+    left: 13px; }
+  
+  .promo__rectagle_days {
+    right: -155px;
+    top: -56px; }
+  
+  .promo__subtitle_weight {
+    top: 44px;
+    left: 19px;
+    display: flex;
+    text-align: center; }
+  
+  .promo__subtitle_days {
+    top: 44px;
+    right: 19px;
+    padding-left: 5px;
+  }
+
+  .promo__value_weight {
+      left: 44px;
+  }
+
+  .promo__value_days {
+      left: 22px;
+  }
+
+  .promo_lines {
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 100px;
+    
+}
+
+.promo__line_gray {
+    position: relative;
+    width: 84px;
+    height: 14px;
+    background-color: white;
+    border-radius: 32%;
+    border: solid #A9A9A9 1px;
+    bottom: 34px;
+    left: 94px;
+}
+
+.promo__line_green {
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color:#228B22;
+    border-radius: 32%;
+    bottom: 37px;
+    left: 100px;
+}

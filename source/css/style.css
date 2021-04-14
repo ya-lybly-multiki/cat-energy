@@ -189,6 +189,10 @@ body {
   top: 10px;
   left: 30px; }
 
+.catalog__img_bottom {
+  top: 22px;
+  left: 8px; }
+
 .catalog__headline {
   font-size: 24px;
   font-weight: 500;
@@ -221,40 +225,6 @@ body {
   position: absolute;
   left: 114px;
   bottom: 16px; }
-
-.page-header__layout {
-  position: relative;
-  width: 320px; }
-
-.page-header__logo {
-  margin-right: 62px;
-  padding-left: 13px; }
-
-.page-header__logo-header {
-  margin-right: 70px;
-  padding-top: 10px; }
-
-.page-header__menu {
-  border: 0;
-  position: relative;
-  background-color: white;
-  width: 30px; }
-
-.menu__line {
-  width: 20px;
-  height: 2px;
-  background-color: black; }
-
-.line_first {
-  position: absolute;
-  top: 14px; }
-
-.line_second {
-  position: absolute; }
-
-.line_third {
-  position: absolute;
-  bottom: 10px; }
 
 .catalog__wrapper {
   position: relative; }
@@ -353,35 +323,6 @@ body {
   padding-top: 5px;
   top: 152px; }
 
-.container {
-  width: 295px; }
-
-.img_top {
-  top: 10px;
-  left: 30px; }
-
-.img_bottom {
-  top: 22px;
-  left: 8px; }
-
-.text_top {
-  width: 225px;
-  margin-left: 19px;
-  margin-top: 26px; }
-
-.text_down {
-  width: 225px;
-  margin-left: 19px;
-  margin-top: 44px; }
-
-.headline_top {
-  top: -2px;
-  left: 86px; }
-
-.headline_bottom {
-  top: -2px;
-  left: 86px; }
-
 .hr {
   width: 240px;
   height: 1px;
@@ -463,6 +404,12 @@ body {
 .promo_text {
   width: 280px; }
 
+.catalog__programm {
+  position: relative;
+  background-color: #D3D3D3;
+  width: 280px;
+  height: 230px; }
+
 .promo__rectagle {
   position: relative;
   width: 120px;
@@ -490,12 +437,37 @@ body {
   font-size: 16px;
   font-weight: 400; }
 
+.promo__rectagle_weight {
+  top: 34%;
+  left: 13px; }
+
+.promo__rectagle_days {
+  right: -155px;
+  top: -56px; }
+
+.promo__subtitle_weight {
+  top: 44px;
+  left: 19px;
+  display: flex;
+  text-align: center; }
+
+.promo__subtitle_days {
+  top: 44px;
+  right: 19px;
+  padding-left: 5px; }
+
+.promo__value_weight {
+  left: 44px; }
+
+.promo__value_days {
+  left: 22px; }
+
 .promo_lines {
   font-size: 16px;
   font-weight: 400;
   word-spacing: 100px; }
 
-.line_gray {
+.promo__line_gray {
   position: relative;
   width: 84px;
   height: 14px;
@@ -505,7 +477,31 @@ body {
   bottom: 34px;
   left: 94px; }
 
-.line_green {
+.promo__line_green {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  background-color: #228B22;
+  border-radius: 32%;
+  bottom: 37px;
+  left: 100px; }
+
+.promo_lines {
+  font-size: 16px;
+  font-weight: 400;
+  word-spacing: 100px; }
+
+.promo__line_gray {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: white;
+  border-radius: 32%;
+  border: solid #A9A9A9 1px;
+  bottom: 34px;
+  left: 94px; }
+
+.promo__line_green {
   position: absolute;
   width: 35px;
   height: 6px;
@@ -538,11 +534,8 @@ body {
 
 .page-footer__adress {
   display: flex;
-  margin-bottom: 23px; }
-
-.page-footer__adress {
-  display: flex;
-  margin-bottom: 23px; }
+  margin-bottom: 23px;
+  padding-top: 20px; }
 
 .page-footer__map {
   position: relative;
@@ -552,20 +545,17 @@ body {
   text-align: start;
   width: 120px; }
 
-.page-footer__slogan {
-  text-align: start;
-  width: 120px; }
-
-.subtitle_footer {
+.page-footer__subtitle {
   width: 144px;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 37px;
   margin-top: 0; }
 
-.slogan_form {
-  margin-top: 62px;
-  padding-left: 72px; }
+.page-footer__slogan {
+  text-align: start;
+  width: 120px;
+  text-transform: uppercase; }
 
 .page-footer__social-contacts {
   display: flex;
@@ -609,6 +599,14 @@ body {
 
 .form-group {
   padding-bottom: 10px; }
+
+.form__slogan {
+  margin-top: 62px;
+  padding-left: 72px; }
+
+.form__button {
+  position: absolute;
+  top: 75%; }
 
 .custom-radio-btn {
   position: relative;
@@ -662,14 +660,6 @@ body {
 
 .info-additionally {
   position: relative; }
-
-.icon_email {
-  bottom: 48px;
-  left: 196px; }
-
-.icon_phone {
-  bottom: 2px;
-  left: 219px; }
 
 .option {
   display: block;
@@ -770,14 +760,6 @@ body {
   position: relative;
   display: flex;
   margin-bottom: 50px; }
-
-.button_form {
-  position: absolute;
-  top: 75%; }
-
-.slogan_form {
-  margin-top: 62px;
-  padding-left: 72px; }
 
 .field-text {
   display: flex;

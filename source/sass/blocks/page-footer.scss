@@ -28,12 +28,7 @@
 .page-footer__adress {
     display: flex;
     margin-bottom: 23px;
-}
-
-
-.page-footer__adress {
-    display: flex;
-    margin-bottom: 23px;
+    padding-top: 20px;
 }
 
 .page-footer__map {
@@ -44,4 +39,28 @@
 .page-footer__slogan {
     text-align: start;
     width: 120px;
+}
+
+.page-footer__subtitle {
+    width: 144px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 37px;
+    margin-top: 0;
+}
+
+.page-footer__slogan {
+    text-align: start;
+    width: 120px;
+    text-transform: uppercase;
+}
+
+.page-footer__social-contacts {
+    display: flex;
+    padding-top: 62px;
+    padding-left: 0;
+}
+
+.social__item {
+    list-style-type: none;
 }
