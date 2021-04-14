@@ -1,0 +1,26 @@
+.page-header__layout {
+    position: relative;
+    width: 320px;
+}
+
+.page-header__logo-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 54px 10px 20px;
+}
+
+.page-header__logo {
+    margin-right: 62px;
+    padding-left: 13px;
+}
+
+.page-header__logo-header {
+    margin-right: 70px;
+    padding-top: 10px;
+}
+
+.page-header__wrapper {
+    position: relative;
+    padding-bottom: 167px;
+}

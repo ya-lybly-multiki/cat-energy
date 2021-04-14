@@ -41,6 +41,33 @@
     padding-left: 10px;
 }
 
-.line_top {
-    top: -17px;
+.additional__img {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.additional__gift {
+    position: relative;
+}
+
+.additional__icon {
+    position: absolute;
+    left: 108px;
+    top: 53px;
+}
+
+.additional__text-gift {
+    position: absolute;
+    top: 130px;
+    width: 130px;
+    text-align: center;
+    left: 72px;
+    color: white;
+}
+
+.additional__container {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
 }
