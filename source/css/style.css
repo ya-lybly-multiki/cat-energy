@@ -170,13 +170,19 @@ body {
 .page-main {
   width: 320px; }
 
-.catalog__wrapper {
+.programm__container {
+  position: relative;
+  background-color: #D3D3D3;
+  width: 280px;
+  height: 230px; }
+
+.programm__wrapper {
   position: relative; }
 
-.catalog_slim {
+.programm_slim {
   margin-bottom: 25px; }
 
-.catalog__circle {
+.programm__circle {
   position: absolute;
   background-color: #008000;
   width: 50px;
@@ -185,71 +191,64 @@ body {
   left: 19px;
   top: 11px; }
 
-.catalog__img_top {
+.programm__img {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: multiply; }
+
+.programm__img_top {
   top: 10px;
   left: 30px; }
 
-.catalog__img_bottom {
+.programm__img_bottom {
   top: 22px;
   left: 8px; }
 
-.catalog__headline {
+.programm__headline {
   font-size: 24px;
   font-weight: 500;
   position: absolute; }
 
-.catalog__headline_top {
+.programm__headline_top {
   top: -2px;
   left: 86px; }
 
-.catalog__headline_bottom {
+.programm__headline_bottom {
   top: -2px;
   left: 86px; }
 
-.catalog__text_top {
+.programm__text_top {
   width: 225px;
   margin-left: 19px;
   margin-top: 26px; }
 
-.catalog__text_down {
+.programm__text_down {
   width: 225px;
   margin-left: 19px;
   margin-top: 44px; }
 
-.catalog__excerpt {
+.programm__excerpt {
   position: absolute;
   bottom: 10px;
   left: 10px; }
 
-.catalog__link-img {
+.programm__link-img {
   position: absolute;
   left: 114px;
   bottom: 16px; }
 
+.programm__hr_top {
+  position: absolute;
+  bottom: 37px;
+  left: 20px; }
+
+.programm__hr_bottom {
+  position: absolute;
+  bottom: 37px;
+  left: 20px; }
+
 .catalog__wrapper {
   position: relative; }
-
-.catalog_slim {
-  margin-bottom: 25px; }
-
-.catalog__headline {
-  font-size: 24px;
-  font-weight: 500;
-  position: absolute; }
-
-.catalog__circle {
-  position: absolute;
-  background-color: #008000;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  left: 19px;
-  top: 11px; }
-
-.catalog__img {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: multiply; }
 
 .catalog__excerpt {
   position: absolute;
@@ -303,6 +302,17 @@ body {
   .catalog__list li {
     list-style-type: none; }
 
+.hr_catalog {
+  position: absolute;
+  top: -27px;
+  left: 4px;
+  width: 306px; }
+
+.catalog_hr {
+  position: absolute;
+  top: 173px;
+  width: 311px; }
+
 .button {
   position: absolute;
   width: 280px;
@@ -328,74 +338,6 @@ body {
   height: 1px;
   opacity: 30%; }
 
-.hr_top {
-  position: absolute;
-  bottom: 37px;
-  left: 20px; }
-
-.hr_bottom {
-  position: absolute;
-  bottom: 37px;
-  left: 20px; }
-
-.footer_hr-top {
-  width: 280px;
-  position: absolute;
-  left: 26px;
-  top: 48px; }
-
-.footer_hr-bottom {
-  width: 280px;
-  position: absolute;
-  left: 26px;
-  top: 117px; }
-
-.form_hr-top {
-  width: 320px;
-  position: absolute;
-  bottom: 125px; }
-
-.form_hr-bottom {
-  width: 320px;
-  position: absolute;
-  bottom: -20px; }
-
-.info__hr {
-  width: 90px;
-  height: 3px;
-  background-color: #228B22; }
-
-.hr_coment-1 {
-  position: absolute;
-  left: 192px;
-  top: 20px; }
-
-.hr_coment-2 {
-  position: absolute;
-  left: 139px;
-  top: 16px;
-  width: 143px; }
-
-.hr_additionally {
-  position: absolute;
-  width: 134px;
-  left: 149px;
-  top: 12px; }
-
-.line_top {
-  top: -17px; }
-
-.hr_catalog {
-  position: absolute;
-  top: -27px;
-  left: 4px;
-  width: 306px; }
-
-.catalog_hr {
-  position: absolute;
-  top: 173px;
-  width: 311px; }
-
 .promo__wrapper {
   background-color: #D3D3D3;
   width: 300px;
@@ -403,12 +345,6 @@ body {
 
 .promo_text {
   width: 280px; }
-
-.catalog__programm {
-  position: relative;
-  background-color: #D3D3D3;
-  width: 280px;
-  height: 230px; }
 
 .promo__rectagle {
   position: relative;
@@ -565,6 +501,18 @@ body {
 .social__item {
   list-style-type: none; }
 
+.footer_hr-top {
+  width: 280px;
+  position: absolute;
+  left: 26px;
+  top: 48px; }
+
+.footer_hr-bottom {
+  width: 280px;
+  position: absolute;
+  left: 26px;
+  top: 117px; }
+
 .form__wrapper {
   position: relative;
   width: 320px; }
@@ -607,6 +555,16 @@ body {
 .form__button {
   position: absolute;
   top: 75%; }
+
+.form_hr-top {
+  width: 320px;
+  position: absolute;
+  bottom: 125px; }
+
+.form_hr-bottom {
+  width: 320px;
+  position: absolute;
+  bottom: -20px; }
 
 .custom-radio-btn {
   position: relative;
@@ -660,6 +618,17 @@ body {
 
 .info-additionally {
   position: relative; }
+
+.info__hr {
+  width: 90px;
+  height: 3px;
+  background-color: #228B22; }
+
+.info__hr_comment {
+  position: absolute;
+  left: 139px;
+  top: 16px;
+  width: 143px; }
 
 .option {
   display: block;
@@ -760,6 +729,15 @@ body {
   position: relative;
   display: flex;
   margin-bottom: 50px; }
+
+.hr_additionally {
+  position: absolute;
+  width: 134px;
+  left: 149px;
+  top: 12px; }
+
+.additional_line_top {
+  top: -17px; }
 
 .field-text {
   display: flex;
