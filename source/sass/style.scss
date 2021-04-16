@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  .hidden {
+    position: absolute;
+
+    white-space: nowrap;
+
+    width: 1px;
+    height: 1px;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    border: 0;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%); 
+  }
+body {
+    margin: 0;
+    padding-left: 10px;
+    min-width: 320px;
+
+    font-family: "Oswald", Arial, sans-serif;
+    color: black;
+
+    background-color:white;
+  }
+
+  .title{
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .text {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .visually-hidden {
+    visibility: hidden;
+  }
+  
+
+  @font-face {
+	font-family: 'Conv_arial';
+	src: url('fonts/arial.eot');
+	src: local('☺'), url('fonts/arial.woff') format('woff'), url('fonts/arial.ttf') format('truetype'), url('fonts/arial.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import 'blocks/page-header.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/header.scss';
+@import 'blocks/programm.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/button.scss';
+@import 'blocks/hr.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/promo-line.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/form.scss';
+@import 'blocks/radio-span.scss';
+@import 'blocks/info.scss';
+@import 'blocks/checkbox.scss';
+@import 'blocks/catalog__bottom.scss';
+@import 'blocks/additional.scss';
+@import 'blocks/field.scss';
+@import 'blocks/instruction.scss';
+@import 'blocks/page-main.scss';
+
+
+
+

@@ -1,0 +1,32 @@
+.option {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.check {
+    padding-left: 3.2em;
+    padding-bottom: 10px;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    margin-left: -2.5em;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid gray; 
+    padding: 6px 3px 6px 4px;
+}
+
+.check__input:checked + .check__box {
+    background-image: url(/img/icon-tick.svg);
+    background-size: 32px auto;
+    background-clip: content-box;
+}

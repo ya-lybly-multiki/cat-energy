@@ -1,0 +1,54 @@
+.form__wrapper {
+    position: relative;
+    width: 320px;
+}
+
+
+.form__title {
+    font-size: 36px;
+}
+
+.form__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form_text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+    flex-grow: 1;
+    padding: 6px 18px;
+}
+
+.form-item {
+    display: flex;
+    width: 100%;
+}
+
+.form__radio-button {
+    width: 30px;
+    height: 30px;
+}
+
+.form-radio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.form__slogan {
+    margin-top: 62px;
+    padding-left: 72px;
+}
+
+.form__button {
+    position: absolute;
+    top: 75%;
+}
+

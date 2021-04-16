@@ -1,0 +1,29 @@
+
+.header__title {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 39px;
+    width: 249px;
+    line-height: 1.1;
+    top: 11px;
+}
+
+.header__text {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    z-index: 1;
+    top: 105px;
+    left: 66px;
+}
+
+.header__img_background {
+    position: relative;
+}
+
+.header_logo {
+    position: absolute;
+    top: 160px;
+    left: 10px;
+}

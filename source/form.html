@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__layout">
+          <div class="page-header__logo-block">
+            <a class="page-header__logo" href="#">
+                <img class="page-header__logo-img" src="/img/logo-mobile.png" width="33" height="38" alt="Логотип сайта">
+            </a>
+            <a class="page-header__logo-header" href="#">
+                <img class="page-header__logo-header-img" src="/img/logo-mobile-header.jpg" width="101" height="18" alt="Логотип названия">
+            </a>
+          </div>
+          <nav class="main-nav">
+            </button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link main-nav__item-link--active">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="main-nav__toggle main-nav__toggle_hidden" type="button">
+            <span class="main-nav__toggle-bar">Меню</span>
+            </button>
+        </div>
+      </header>
+    <main class="page-main">
+        <section class="form">
+            <div class="form__wrapper">
+                <h1 class="form__title">Подбор программы</h1>
+                <p class="form__subtitle">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
+                <form class="form__main-form" action="#" method="POST">
+                    <div class="form__text-fields">
+                        <div class="form__row field-text">
+                            <label class="field-text__label" for="cat-name">Имя:*</label>
+                             <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+                            </div>
+                         <div class="form__row field-text">
+                             <label class="field-text__label" for="cat-weight">Вес (кг):*</label>
+                             <input class="field-text__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+                         </div>
+                         <div class="form__row field-text">
+                             <label class="field-text__label" for="cat-age">Возраст (лет):</label>
+                              <input class="field-text__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+                         </div>
+                     </div>
+                <hr class="hr hr__form_top">
+                <div class="form-radio">
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="programm" value="slim" class="real-radio-btn" checked>
+                            <span class="custom-radio-btn"></span> 
+                            ПОХУДЕНИЕ
+                            
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="programm" value="mass" class="real-radio-btn">
+                            <span class="custom-radio-btn"></span> 
+                            НАБОР МАССЫ
+                            
+                        </label>
+                    </div>  
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="programm" value="advice" class="real-radio-btn">
+                            <span class="custom-radio-btn"></span> 
+                            НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
+                        </label>
+                    </div>  
+                </div>
+                <hr class="hr hr__form_bottom">
+            </div>
+        </section>
+        <section class="info">
+            <div class="form__text-fields form__text-fields--contacts">
+                <div class="form__row field-text">
+                    <label class="field-text__label field-text__label--email" for="owner-email">E-mail:*</label>
+                    <div class="field-text__input-wrapper field-text__input-wrapper--icon">
+                        <input class="field-text__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required=""> 
+                        <img class="field-text__icon field-text__icon--email" src="/img/mail.png">
+                        
+                    </div>
+                </div>
+                <div class="form__row field-text">
+                    <label class="field-text__label field-text__label--phone" for="owner-phone">Телефон:*</label>
+                    <div class="field-text__input-wrapper field-text__input-wrapper--icon">
+                        <input class="field-text__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required=""> 
+                        <img class="field-text__icon field-text__icon--phone" src="/img/phone.png">
+                </div>
+            </div>
+            </div>
+                <div class="info__coments">
+                    <h2 class="info__heading">Комментарии</h2>
+                    <hr class="hr_info hr__info_comment">
+                        <textarea class="info_coments coment_field" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+                </div>
+                <div class="info-additionally">
+                    <h2 class="info__heading">Дополнительно</h2>
+                    <hr class="info__hr hr_additionally">
+                    <div class="form-checkbox">
+                        <div class="form-group_checkbox">
+                            <label class="check option">
+                                <input type="checkbox" name="sugar" value="additionally" class="check__input" checked>
+                                <span class="check__box"></span>
+                                Сахарозаменитель
+                            </label>
+                        </div>
+                        <div class="form-group_checkbox">
+                            <label class="check option">
+                                <input type="checkbox" name="water" value="additionally" class="check__input">
+                                <span class="check__box"></span>
+                                Питьевая вода
+                            </label>
+                        </div>
+                        <div class="form-group_checkbox">
+                            <label class="check option">
+                                <input type="checkbox" name="milk" value="additionally" class="check__input">
+                                <span class="check__box"></span>
+                                Молоко
+                            </label>
+                        </div>
+                        <div class="form-group_checkbox">
+                            <label class="check option">
+                                <input type="checkbox" name="vitamins" value="additionally" class="check__input">
+                                <span class="check__box"></span>
+                                Витамины
+                            </label>
+                        </div>
+                    </div>
+                         <p class="form__slogan"><sup>*</sup>-обязательные поля</p>
+                        <button class="button form__button">Отправить заявку</button>
+                </div>
+             </form>  
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__adress">
+                <b class="slogan page-footer__slogan">Приглашаем к сотрудничеству диллеров!</b>
+                <p class="subtitle page-footer__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+            <img class="page-footer__map" src="/img/map.png" alt="Карта">
+            <img class="page-footer__marker" src="/img/map-pin.png 50%.png">
+            <div class="page-footer__contacts">
+                <img class="page-footer__img" src="/img/footer-logo.png">
+                <hr>
+                <ul class="page-footer__social-contacts">
+                    <li class="social__item">
+                        <a class="social__link social__link_vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
+                          <img src="/img/m-vk.svg.png"></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link social__link_instagram" href="#"><span class="visually-hidden">Инстаграм</span>
+                          <img src="/img/m-insta.svg.png"></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link social__link_facebook" href="#"><span class="visually-hidden">Фейсбук</span>
+                          <img src="/img/m-fb.svg.png"></a>
+                </ul>
+                <hr>
+                <p class="page-footer__copyright">HTML Academy</p>
+                <img class="page-footer__icon" src="/img/htmlacademy.svg.png">
+            </div>
+        </div>
+    </footer>
+    <script src="/js/modal.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+.promo_lines {
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 100px;
+    
+}
+
+.promo__line_gray {
+    position: relative;
+    width: 84px;
+    height: 14px;
+    background-color: white;
+    border-radius: 32%;
+    border: solid #A9A9A9 1px;
+    bottom: 34px;
+    left: 94px;
+}
+
+.promo__line_green {
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color:#228B22;
+    border-radius: 32%;
+    bottom: 37px;
+    left: 100px;
+}
+
