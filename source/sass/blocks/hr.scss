@@ -4,27 +4,27 @@
     opacity: 30%;
 }
 
-.form_hr-top {
+.hr__form_top {
     width: 320px;
     position: absolute;
     bottom: 125px;
 }
 
-.form_hr-bottom {
+.hr__form_bottom {
     width: 320px;
     position: absolute;
     bottom: -20px;
 }
 
 
-.hr_catalog {
+.hr__catalog_top {
     position: absolute;
     top: -27px;
     left: 4px;
     width: 306px;
 }
 
-.catalog_hr {
+.catalog__hr {
     position: absolute;
     top: 173px;
     width: 311px;
@@ -37,26 +37,26 @@
     top: 12px;
 }
 
-.info__hr {
+.hr_info {
     width: 90px;
     height: 3px;
     background-color: #228B22;
 }
 
-.info__hr_comment {
+.hr_info_comment {
     position: absolute;
     left: 139px;
     top: 16px;
     width: 143px;
 }
 
-.programm__hr_top {
+.hr__programm_top {
     position: absolute;
     bottom: 37px;
     left: 20px;
 }
 
-.programm__hr_bottom {
+.hr__programm_bottom {
     position: absolute;
     bottom: 37px;
     left: 20px;
