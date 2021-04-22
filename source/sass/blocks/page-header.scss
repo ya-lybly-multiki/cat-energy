@@ -1,6 +1,8 @@
+@import 'variables.scss';
+
 .page-header__layout {
     position: relative;
-    width: 320px;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo-block {
@@ -23,4 +25,52 @@
 .page-header__wrapper {
     position: relative;
     padding-bottom: 167px;
+}
+
+.header_preview::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    min-height: 306px;
+    width: 100%;
+    background-image: url(/img/index-background-mobile.png);
+    background-color: #63a73a;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+}
+
+.page-header__container {
+    display: flex;
+}
+
+@media (min-width: $phones-max) {
+    .page-header::after {
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .logo {
+    max-width: 174px;
+    }
+}
+
+@media (min-width: $tablets) {
+    .page-header__container {
+        padding-top: 21px;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: $phones-max) {
+    .page-header__logo-block {
+    display: none;
+    }
 }

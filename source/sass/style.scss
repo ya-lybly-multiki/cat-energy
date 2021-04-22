@@ -21,9 +21,6 @@
   }
 body {
     margin: 0;
-    padding-left: 10px;
-    min-width: 320px;
-
     font-family: "Oswald", Arial, sans-serif;
     color: black;
 
@@ -55,13 +52,11 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import 'blocks/page-header.scss';
 @import 'blocks/main-nav.scss';
-@import 'blocks/header.scss';
 @import 'blocks/programm.scss';
 @import 'blocks/catalog.scss';
 @import 'blocks/button.scss';
 @import 'blocks/hr.scss';
 @import 'blocks/promo.scss';
-@import 'blocks/promo-line.scss';
 @import 'blocks/page-footer.scss';
 @import 'blocks/form.scss';
 @import 'blocks/radio-span.scss';
@@ -72,7 +67,9 @@ body {
 @import 'blocks/field.scss';
 @import 'blocks/instruction.scss';
 @import 'blocks/page-main.scss';
-
+@import 'variables.scss';
+@import 'blocks/container.scss';
+@import 'blocks/adress.scss'
 
 
 

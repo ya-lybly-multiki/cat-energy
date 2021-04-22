@@ -1,6 +1,5 @@
 .form__wrapper {
     position: relative;
-    width: 320px;
 }
 
 
@@ -36,6 +35,9 @@
     flex-direction: column;
     margin-top: 45px;
     margin-bottom: 45px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 20px;
 }
 
 .form-group {

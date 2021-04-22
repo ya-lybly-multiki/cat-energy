@@ -1,0 +1,45 @@
+.adress__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0 25px;
+    .adress__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        max-width: 124px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .adress__text {
+        max-width: 160px;
+        font-size: 14px;
+        margin: 0;
+        font-family: "Arial", "Tahoma", sans-serif;
+        line-height: 21px;
+    }
+  }
+  
+
+
+  @media (min-width:$tablets) {
+      .adress__wrapper {
+        padding: 28px 58px 25px 49px;
+        .adress__title {
+            font-size: 20px;
+        }
+        .adress__text {
+            font-size: 16px;
+            text-align: right;
+        }
+    }
+  }
+
+.adress__map {
+    position: relative;
+}
+
+.map__marker {
+    position: absolute;
+    left: 41%;
+    top: 31%;
+}

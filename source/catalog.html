@@ -12,7 +12,11 @@
         <div class="page-header__layout">
           <div class="page-header__logo-block">
             <a class="page-header__logo" href="#">
-                <img class="page-header__logo-img" src="/img/logo-mobile.png" width="33" height="38" alt="Логотип сайта">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="/img/logo-tablet.png">
+                    <source media="(min-width: 1300px)" srcset="/img/logo-desctop.png">
+                    <img class="page-header__logo-img" src="/img/logo-mobile.png" width="33" height="38" alt="Логотип сайта">
+                </picture>
             </a>
             <a class="page-header__logo-header" href="#">
                 <img class="page-header__logo-header-img" src="/img/logo-mobile-header.jpg" width="101" height="18" alt="Логотип названия">
@@ -220,36 +224,53 @@
            </div>
         </section>
     </main>
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-            <div class="page-footer__adress">
-                <b class="slogan page-footer__slogan">Приглашаем к сотрудничеству диллеров!</b>
-                <p class="subtitle page-footer__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="adress">
+        <div class="container">
+          <div class="page-adress__wrapper">
+            <div class="adress__wrapper">
+              <strong class="adress__title">Приглашаем <br> к сотрудничеству диллеров</strong>
+              <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
-            <img class="page-footer__map" src="/img/map.png" alt="Карта">
-            <img class="page-footer__marker" src="/img/map-pin.png 50%.png">
-            <div class="page-footer__contacts">
-                <img class="page-footer__img" src="/img/footer-logo.png">
-                <hr>
-                <ul class="page-footer__social-contacts">
-                    <li class="social__item">
-                        <a class="social__link social__link_vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
-                          <img src="/img/m-vk.svg.png"></a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link social__link_instagram" href="#"><span class="visually-hidden">Инстаграм</span>
-                          <img src="/img/m-insta.svg.png"></a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link social__link_facebook" href="#"><span class="visually-hidden">Фейсбук</span>
-                          <img src="/img/m-fb.svg.png"></a>
-                </ul>
-                <hr>
-                <p class="page-footer__copyright">HTML Academy</p>
-                <img class="page-footer__icon" src="/img/htmlacademy.svg.png">
-            </div>
+          </div>
         </div>
-    </footer>
+        <div class="adress__map">
+         <picture>
+           <img class="map__img" src="/img/map.png">
+           <img class="map__marker" src="/img/map-pin.png 50%.png">
+         </picture>
+      </div>
+      </section>
+      <footer>
+         <div class="page-footer__column">
+           <div class="page-footer__container">
+             <a class="img__link" href="#">
+               <img class="footer__img" src="/img/footer-logo.png">
+             </a> 
+           </div>
+           <div class="page-footer__container">
+             <ul class="page-footer__social-contacts">
+               <li class="social__item">
+                   <a class="social__link social__link_vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
+                     <img src="/img/m-vk.svg.png"></a>
+                 </li>
+                 <li class="social__item">
+                   <a class="social__link social__link_instagram" href="#"><span class="visually-hidden">Инстаграм</span>
+                     <img src="/img/m-insta.svg.png"></a>
+                 </li>
+                 <li class="social__item">
+                   <a class="social__link social__link_facebook" href="#"><span class="visually-hidden">Фейсбук</span>
+                     <img src="/img/m-fb.svg.png"></a>
+              </ul>
+           </div>
+           <div class="page-footer__container">
+             <a class="page-footer__academy-links">
+               <p class="page-footer__copyright">HTML Academy</p>
+               <img class="page-footer__icon" src="/img/htmlacademy.svg.png" width="30" height="30">
+            </a>
+           </div>
+        </div>
+       </div>
+      </footer>
     <script src="/js/modal.js"></script>
 </body>
 </html>
