@@ -10,40 +10,42 @@
 <body>
   <header class="page-header">
     <div class="page-header__layout header_preview">
-      <div class="page-header__logo-block">
-        <a class="page-header__logo" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="/img/logo-tablet.png">
-            <source media="(min-width: 1300px)" srcset="/img/logo-desctop.png">
-            <img class="page-header__logo-img" src="/img/logo-mobile.png" width="33" height="38" alt="Логотип сайта">
-        </picture>
-        </a>
-        <a class="page-header__logo-header" href="#">
-            <img class="page-header__logo-header-img" src="/img/logo-mobile-header.jpg" width="101" height="18" alt="Логотип названия">
-        </a>
-      </div>
+      <div class="container">
+        <div class="page-header__logo-block">
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/logo-tablet.png">
+              <source media="(min-width: 1300px)" srcset="/img/logo-desctop.png">
+              <img class="page-header__logo-img" src="/img/logo-mobile.png" width="33" height="38" alt="Логотип сайта">
+          </picture>
+          </a>
+          <a class="page-header__logo-header" href="#">
+              <img class="page-header__logo-header-img" src="/img/logo-mobile-header.jpg" width="101" height="18" alt="Логотип названия">
+          </a>
+        </div>
 
-      <nav class="main-nav">
-        </button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="programm.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="main-nav__toggle main-nav__toggle_hidden" type="button">
-        <span class="main-nav__toggle-bar">Меню</span>
-        </button>
+        <nav class="main-nav">
+          </button>
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__item-link_active main-nav__item-link_index" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="main-nav__toggle main-nav__toggle_hidden" type="button">
+          <span class="main-nav__toggle-bar">Меню</span>
+          </button>
+      </div>
     </div>
     </header>
 
-    <header class="page-header__tablet-desktop">
+    <header class="page-header__tablet page-header_desktop">
       <div class="container">
         <div class="page-header__container">
           <a class="logo" href="#">
@@ -52,13 +54,13 @@
           <nav class="navigation">
             <ul class="navigation__items">
               <li class="navigation__item">
-                <a class="navigation__link navigation__link_active" href="index.html">Главная</a>
+                <a class="navigation__link navigation__link_active link_index" href="index.html">Главная</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="programm.html">Каталог продукции</a>
+                <a class="navigation__link link_index" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Подбор программы</a>
+                <a class="navigation__link link_index" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -76,15 +78,15 @@
             <source media="(min-width: 768px)" srcset="/img/index-can-tablet.png">
             <img class="main__img main_logo" src="/img/index-can-mobile.png" alt="">
           </picture>
-          <button class="button" type="button">Выбрать программу</button>
+          <button class="button button_small" type="button">Выбрать программу</button>
     </div>
         <section class="programm">
             <div class="programm__wrapper">
                 <div class="programm__container ">
                     <div class="programm__img">
                       <picture>
+                        <source media="(min-width: 1300px)" srcset="/img/cat-slim-desctop.png">
                         <source media="(min-width: 768px)" srcset="/img/cat-slim-tablet.png">
-                        <source media="(min-width: 1300px)" srcset="/img/cat-slim-desktop.png">
                       <img class="programm__icon programm__icon_slim" src="/img/cat-img.jpg">
                     </picture>
                     </div>
@@ -100,8 +102,8 @@
                 <div class="programm__container ">
                     <div class="programm__img">
                       <picture>
+                        <source media="(min-width: 1300px)" srcset="/img/cat-pro-desctop.png">
                         <source media="(min-width: 768px)" srcset="/img/cat-pro-tablet.png">
-                        <source media="(min-width: 1300px)" srcset="/img/cat-slim-desktop.png">
                       <img class="programm__icon programm__icon_slim" src="/img/cat-img-2.jpg">
                     </picture>
                     </div>
@@ -157,53 +159,62 @@
               </div>
         </section>
         <section class="promo">
-            <div class="promo__wrapper">
-                <h2 class="title promo_title">Живой пример</h2>
-                <p class="text promo_text">
-                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-                  При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-                <div class="promo__stats">
-                    <div class="promo__stats__wrapper">
-                      <ul class="promo__result">
-                        <li class="promo__result__item">
-                          <div class="promo__result__wrapper">
-                            <strong class="result__total">5КГ</strong>
-                            <p class="result__text">Снижение веса</p>
-                          </div>
-                        </li>
-                        <li class="promo__result__item">
-                          <div class="promo__result__wrapper">
-                            <strong class="result__total">60 дней</strong>
-                            <p class="result__text">Затраченно времени</p>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="promo__footer">
-                    <div class="promo__column promo__column_xl-7 promo__column_color">
-                      <div class="promo__pictures">
-                        <picture>
-                          <source media="(min-width: 768px)" srcset="/img/before--tablet.png">
-                          <source media="(min-width: 1300px)" srcset="/img/advantage-1-tablet.png">
-                          <img class="promo__img promo__img_before" src="/img/before-mobile.png">
-                        </picture>
-                        <picture>
-                          <source media="(min-width: 768px)" srcset="/img/after-tablet.png">
-                          <img class="promo__img promo__img_after" src="/source/img/after-mobile.png">
-                        </picture>
-                      </div>
-                      <div class="promo__distrinction">
-                        <button class="distrinction__btn">Было</button>
-                        <div class="distrinction__progress">
-                          <div class="distrinction__tog"></div>
+          <div class="background__promo">
+            <div class="container container_mobile container_tablet">
+              <div class="promo__wrapper">
+                  <div class="promo__main">
+                    <h2 class="title promo_title">Живой пример</h2>
+                    <p class="text promo_text">
+                      Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+                      При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                    <div class="promo__stats">
+                        <div class="promo__stats__wrapper">
+                          <ul class="promo__result">
+                            <li class="promo__result__item">
+                              <div class="promo__result__wrapper">
+                                <strong class="result__total">5КГ</strong>
+                                <p class="result__text">Снижение веса</p>
+                              </div>
+                            </li>
+                            <li class="promo__result__item">
+                              <div class="promo__result__wrapper">
+                                <strong class="result__total">60 дней</strong>
+                                <p class="result__text">Затраченно времени</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
-                        <button class="distrinction__btn">Стало</button>
                       </div>
-                    </div>
-                </div>
-             </div>
-            </div>
+                      <div class="promo__cost">
+                        <span class="cost__text">Затраты на питание:</span>
+                        <span class="cost__text">15 000 РУБ.</span>
+                      </div>
+                  </div>
+                    <div class="promo__footer">
+                      <div class="promo__column promo__column_xl-7 promo__column_color">
+                        <div class="promo__pictures">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="/img/before--tablet.png">
+                            <source media="(min-width: 1300px)" srcset="/img/advantage-1-tablet.png">
+                            <img class="promo__img promo__img_before" src="/img/before-mobile.png">
+                          </picture>
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="/img/after-tablet.png">
+                            <img class="promo__img promo__img_after" src="/source/img/after-mobile.png">
+                          </picture>
+                        </div>
+                        <div class="promo__distrinction">
+                          <button class="distrinction__btn">Было</button>
+                          <div class="distrinction__progress">
+                            <div class="distrinction__tog"></div>
+                          </div>
+                          <button class="distrinction__btn">Стало</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
         </section>
     </main>
     <section class="adress">
@@ -212,21 +223,17 @@
            <strong class="adress__title">Приглашаем <br> к сотрудничеству диллеров</strong>
            <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
          </div>
-     <div class="adress__map">
-      <picture>
-        <source media="(min-width: 768px)" srcset="/img/map-tablet.png">
-        <source media="(min-width: 1300px)" srcset="/img/map-desctop.png">
-        <img class="map__img" src="/img/map.png">
-      </picture>
-      <picture>
-        <source media="(min-width: 768px)" srcset="/img/map-pin-tablet.png">
-        <source media="(min-width: 1300px)" srcset="/img/map-pin-desctop.png">
-        <img class="map__marker" src="/source/img/map-pin.png 50%.png">
-        
-      </picture>
-   </div>
-   </section>
-   <footer>
+        </section>
+        <section class="map">
+          <div class="adress__map">
+            <div class="map__adress">
+              <strong class="adress__title">Приглашаем <br> к сотрудничеству диллеров</strong>
+              <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619517852107!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+  </section>
+   <footer class="page-footer">
       <div class="page-footer__column">
         <div class="page-footer__container">
           <a class="img__link" href="#">

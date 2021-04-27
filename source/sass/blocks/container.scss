@@ -8,10 +8,36 @@
     padding-right: 20px;
 }
 
+@media (max-width: $phones-max) {
+    .container_mobile {
+        background-color: #f2f2f2;;
+    }
+}
+
 @media (min-width: $tablets){
     .container {
         max-width: 100%;
         padding-left: 30px;
         padding-right: 30px;
         }
+    .container_tablet::after {
+        content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50.3%;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    z-index: -1;
+}
+    }
+ 
+
+
+
+ @media (min-width: $desktops) {
+     .container {
+        max-width: 1300px;
+     }
+     
  }

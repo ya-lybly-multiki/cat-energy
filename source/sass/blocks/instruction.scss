@@ -96,3 +96,16 @@
         max-width: 250px;
     }
 }
+
+@media (min-width: $desktops) {
+    .instruction__item {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: block;
+        min-height: 230px;
+        margin-bottom: 30px;
+    }
+}
+    

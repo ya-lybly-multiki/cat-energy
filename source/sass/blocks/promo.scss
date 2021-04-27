@@ -52,6 +52,7 @@
     padding: 30px 0 35px;
     margin: 0 auto;
     .distrinction__btn {
+        position: relative;
         border: 0;
         font-size: 16px;
         text-transform: uppercase;   
@@ -59,6 +60,7 @@
         padding: 0;
         margin: 0;
         color: #111111;
+        border-bottom: 1px dotted #bebebe;
     }
 }
     
@@ -90,7 +92,15 @@
     margin: 0 auto;
 }
 
- 
+.promo__cost {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .cost__text {
+        padding-right: 6px;
+        text-transform: uppercase;
+    }
+}
 
 .promo__column {
     flex: 0 0 100%;
@@ -116,7 +126,7 @@
 
 @media (min-width: $tablets) {
     .promo__wrapper {
-    background-color: white;
+        background-color: transparent;
     z-index: 1;
     position: relative;
     padding-left: 30px;
@@ -148,21 +158,18 @@
         position: relative;
         max-width: inherit;
         height: 560px;
+        justify-content: center;
     }
     .text {
         font-size: 16px;
     }
 
     .promo__img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     max-width: 100%;
     margin: 0 auto;
  
     }
-}
+
     .promo__img_before {
         clip: rect(auto, 354px, auto, auto);
     }
@@ -195,10 +202,128 @@
 }
 
 .promo__distrinction {
-    max-width: 585px;
-    .distrinction__btn {
-        font-size: 20px;
-    }
+    max-width: 580px;
 }
 
- 
+.distrinction__btn {
+    font-size: 20px;  
+}
+
+.distrinction__progress::after{
+    display: none;
+}
+        .distrinction__progress {
+        max-width: inherit;
+        height: 6px;
+        margin: 0 25px;
+        background: #d9d9d9;
+        }
+        .distrinction__tog {
+            position: absolute;
+            top: 50%;
+            left: 50.5%;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #dcdcdc;
+            background: #ffffff;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+        .distrinction__tog::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: #68b738;
+        }
+        .promo__cost {
+            text-align: right;
+            margin-bottom: 65px;
+             margin-top: -90px;
+            flex-direction: column;
+        }
+     }
+
+     @media (min-width: $desktops) {
+         .text {
+            max-width: 432px;
+            margin-bottom: 52px;
+         }
+
+         .promo__main {
+             width: 40%;
+             flex: 0 0 40%;
+             width: 40%;
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+         }
+         
+         .promo_title {
+            margin-top: 0;
+            margin-bottom: 180px;
+         }
+
+         .promo__cost {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            margin-top: 0;
+            text-align: center;
+            flex-direction: unset;
+                .cost__text {
+                    padding-right: 80px;
+                }
+            }
+        .promo__wrapper {
+            display: flex;
+            margin-top: -10px;
+            background-color: inherit;
+            
+        }
+
+        .promo__img {
+            max-width: inherit;
+        }
+
+       
+        .promo__column::after {
+            display: none;
+        }
+        .promo__footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .background__promo {
+            position:relative;
+            z-index: 1;
+        }
+
+        .background__promo::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 66.3%;
+            background: linear-gradient(to right, #f2f2f2 69%, #eaeaea 50%);
+            z-index: -1;
+        }
+        .promo__result__wrapper {
+            background: #f2f2f2;
+        }
+    }

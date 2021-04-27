@@ -97,3 +97,38 @@
         bottom: 50px;
     }
 }
+
+@media (min-width: $desktops) {
+    .programm__wrapper {
+        display: flex;
+    }
+    .programm__container {
+        margin: 0 33px;
+    }
+    .programm__img {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: inherit;
+
+    }
+
+    .programm__container {
+        padding: 80px 55px 58px;;
+    }
+
+    .programm__headline {
+        padding-left: 162px;
+        margin-bottom: 70px;
+    }
+    
+    .programm__excerpt {
+        font-size: 20px;
+    }
+
+    .programm__link-img {
+        position: absolute;
+        left: 175px;
+        bottom: 55px;
+    }
+}

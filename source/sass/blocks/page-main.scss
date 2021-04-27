@@ -1,3 +1,8 @@
+.page-main {
+    overflow: hidden;
+    display: block;
+}
+
 
 .page-main__block {
     position: relative;
@@ -34,9 +39,9 @@
 @media (min-width:$tablets) {
     .main__img {
         position: absolute;
-        right: 10%;
+        right: -7%;
         margin: 0 auto;
-        bottom: 9%;
+        bottom: 0%;
         z-index: -1;
     }
 
@@ -52,13 +57,33 @@
 
 @media (min-width:$tablets) {
     .main__title {
-        max-width: 329px;
+        max-width: 430px;
         margin-bottom: 25px;
         text-align: left;
         color: #111111;
+        font-size: 60px;
     }
     .main__text {
         color: #111111;
         text-align: left;
+        font-size: 20px;
+        margin-bottom: 31px
     }
 }
+@media (min-width: $desktops){
+    .main__img {
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: 100px;
+    width: 552px;
+    height: auto;
+    }
+    .main__text {
+        margin-bottom: 60px;
+    }
+    .page-main__block {
+        min-height: 600px;
+    }
+}
+  

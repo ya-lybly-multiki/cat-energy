@@ -18,7 +18,12 @@
         line-height: 21px;
     }
   }
+
+  .adress_background {
+      background-color:#f2f2f2 ;
+  }
   
+
 
 
   @media (min-width:$tablets) {
@@ -32,14 +37,48 @@
             text-align: right;
         }
     }
+    .map__adress {
+        display: none;
+    }
   }
 
-.adress__map {
-    position: relative;
-}
+  @media (max-width:$phones-max){
+      .map__adress {
+          display: none;
+      }
+  }
 
-.map__marker {
-    position: absolute;
-    left: 41%;
-    top: 31%;
-}
+  @media (min-width: $desktops) {
+
+    .adress__map {
+        position: relative;
+    }
+      .adress__wrapper {
+          display: none;
+      }
+      .map__adress {
+        width: 100%;
+        max-width: 570px;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        padding: 60px;
+        justify-content: space-between;
+        left: 3%;
+        top: 32%;
+      }
+      .adress__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        max-width: 124px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .adress__text {
+        max-width: 160px;
+        font-size: 14px;
+        margin: 0;
+        font-family: "Arial", "Tahoma", sans-serif;
+        line-height: 21px;
+    }
+  }

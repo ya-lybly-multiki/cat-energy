@@ -6,21 +6,42 @@
     font-size: 16px;
     font-weight: 500;
     padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .button_gray {
-    background-color:#C0C0C0;
+    display: inline-block;
+    background: #f2f2f2;;
     color: black;
     text-align: center;
     text-decoration: none;
-    padding-top: 5px;
-    top: 152px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 @media (min-width:$tablets) {
     .button {
-        width: auto;
+        width: 100%;
         font-size: 20px;
         padding: 16px 27px;
+    }
+    .button_small {
+        width: auto;
+    }
+
+    .button_catalog {
+        padding: 3px 5px;
+    }
+}
+
+@media (min-width: $desktops) {
+    .button__container {
+        flex: 33%;
+        max-width: 33%;
     }
 }
