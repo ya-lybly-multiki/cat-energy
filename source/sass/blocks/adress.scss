@@ -1,0 +1,84 @@
+.adress__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0 25px;
+    .adress__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        max-width: 124px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .adress__text {
+        max-width: 160px;
+        font-size: 14px;
+        margin: 0;
+        font-family: "Arial", "Tahoma", sans-serif;
+        line-height: 21px;
+    }
+  }
+
+  .adress_background {
+      background-color:#f2f2f2 ;
+  }
+  
+
+
+
+  @media (min-width:$tablets) {
+      .adress__wrapper {
+        padding: 28px 58px 25px 49px;
+        .adress__title {
+            font-size: 20px;
+        }
+        .adress__text {
+            font-size: 16px;
+            text-align: right;
+        }
+    }
+    .map__adress {
+        display: none;
+    }
+  }
+
+  @media (max-width:$phones-max){
+      .map__adress {
+          display: none;
+      }
+  }
+
+  @media (min-width: $desktops) {
+
+    .adress__map {
+        position: relative;
+    }
+      .adress__wrapper {
+          display: none;
+      }
+      .map__adress {
+        width: 100%;
+        max-width: 570px;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        padding: 60px;
+        justify-content: space-between;
+        left: 3%;
+        top: 32%;
+      }
+      .adress__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        max-width: 124px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .adress__text {
+        max-width: 160px;
+        font-size: 14px;
+        margin: 0;
+        font-family: "Arial", "Tahoma", sans-serif;
+        line-height: 21px;
+    }
+  }

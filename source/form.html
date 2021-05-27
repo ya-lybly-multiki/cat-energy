@@ -28,7 +28,7 @@
                 <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__item-link main-nav__item-link--active">Подбор программы</a>
+                <a class="main-nav__item-link main-nav__item-link_active">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -37,8 +37,33 @@
             </button>
         </div>
       </header>
+
+      <header class="page-header__tablet-desktop">
+        <div class="container">
+          <div class="page-header__container">
+            <a class="logo" href="#">
+              <img class="logo__img" src="/img/logo-tablet.png">
+            </a>
+            <nav class="navigation">
+              <ul class="navigation__items">
+                <li class="navigation__item">
+                  <a class="navigation__link " href="index.html">Главная</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link navigation__link_active" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+       </div>
+      </header>
+
     <main class="page-main">
         <section class="form">
+          <div class="container">
             <div class="form__wrapper">
                 <h1 class="form__title">Подбор программы</h1>
                 <p class="form__subtitle">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
@@ -57,7 +82,7 @@
                               <input class="field-text__input" type="text" name="cat-age" id="cat-age" placeholder="7">
                          </div>
                      </div>
-                <hr class="hr hr__form_top">
+               
                 <div class="form-radio">
                     <div class="form-group">
                         <label>
@@ -83,35 +108,37 @@
                         </label>
                     </div>  
                 </div>
-                <hr class="hr hr__form_bottom">
             </div>
         </section>
         <section class="info">
-            <div class="form__text-fields form__text-fields--contacts">
-                <div class="form__row field-text">
-                    <label class="field-text__label field-text__label--email" for="owner-email">E-mail:*</label>
-                    <div class="field-text__input-wrapper field-text__input-wrapper--icon">
-                        <input class="field-text__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required=""> 
-                        <img class="field-text__icon field-text__icon--email" src="/img/mail.png">
-                        
-                    </div>
-                </div>
-                <div class="form__row field-text">
-                    <label class="field-text__label field-text__label--phone" for="owner-phone">Телефон:*</label>
-                    <div class="field-text__input-wrapper field-text__input-wrapper--icon">
-                        <input class="field-text__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required=""> 
-                        <img class="field-text__icon field-text__icon--phone" src="/img/phone.png">
-                </div>
-            </div>
-            </div>
+          <div class="container">
+            <fieldset class="info__question">
+              <h2 class="info__title">Контактные данные (владельца кота)</h2>
+              <div class="form__text-fields form__text-fields_contacts">
+                  <div class="form__row field-text">
+                      <label class="field-text__label field-text__label--email" for="owner-email">E-mail:*</label>
+                      <div class="field-text__input-wrapper field-text__input-wrapper--icon">
+                          <input class="field-text__input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required=""> 
+                          <img class="field-text__icon field-text__icon--email" src="/img/mail.png">
+                          
+                      </div>
+                  </div>
+                  <div class="form__row field-text">
+                      <label class="field-text__label field-text__label--phone" for="owner-phone">Телефон:*</label>
+                      <div class="field-text__input-wrapper field-text__input-wrapper--icon">
+                          <input class="field-text__input" type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" required=""> 
+                          <img class="field-text__icon field-text__icon--phone" src="/img/phone.png">
+                  </div>
+              </div>
+              </div>
+          </fieldset>
                 <div class="info__coments">
-                    <h2 class="info__heading">Комментарии</h2>
-                    <hr class="hr_info hr__info_comment">
+                    <h2 class="info__title">Комментарии</h2>
+      
                         <textarea class="info_coments coment_field" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
                 </div>
                 <div class="info-additionally">
-                    <h2 class="info__heading">Дополнительно</h2>
-                    <hr class="info__hr hr_additionally">
+                    <h2 class="info__title">Дополнительно</h2>
                     <div class="form-checkbox">
                         <div class="form-group_checkbox">
                             <label class="check option">
@@ -142,43 +169,70 @@
                             </label>
                         </div>
                     </div>
-                         <p class="form__slogan"><sup>*</sup>-обязательные поля</p>
+                    <div class="form__row_checkbox">
+                      <div class="form__btn-container">
                         <button class="button form__button">Отправить заявку</button>
+                      </div>
+                      <div class="form__slogan-container">
+                        <p class="form__slogan"><sup>*</sup>-обязательные поля</p>
+                      </div>
+                    </div>
                 </div>
              </form>  
             </div>
+          </div>
+        </div>
         </section>
     </main>
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-            <div class="page-footer__adress">
-                <b class="slogan page-footer__slogan">Приглашаем к сотрудничеству диллеров!</b>
-                <p class="subtitle page-footer__subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            </div>
-            <img class="page-footer__map" src="/img/map.png" alt="Карта">
-            <img class="page-footer__marker" src="/img/map-pin.png 50%.png">
-            <div class="page-footer__contacts">
-                <img class="page-footer__img" src="/img/footer-logo.png">
-                <hr>
-                <ul class="page-footer__social-contacts">
-                    <li class="social__item">
-                        <a class="social__link social__link_vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
-                          <img src="/img/m-vk.svg.png"></a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link social__link_instagram" href="#"><span class="visually-hidden">Инстаграм</span>
-                          <img src="/img/m-insta.svg.png"></a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link social__link_facebook" href="#"><span class="visually-hidden">Фейсбук</span>
-                          <img src="/img/m-fb.svg.png"></a>
-                </ul>
-                <hr>
-                <p class="page-footer__copyright">HTML Academy</p>
-                <img class="page-footer__icon" src="/img/htmlacademy.svg.png">
-            </div>
+    <section class="adress adress_background">
+      <div class="container">
+        <div class="page-adress__wrapper">
+          <div class="adress__wrapper">
+            <strong class="adress__title">Приглашаем <br> к сотрудничеству диллеров</strong>
+            <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
-    </footer>
+      </div>
+  </section>
+  <section class="map">
+    <div class="adress__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619517852107!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+      <footer>
+        <div class="page-footer__column">
+          <div class="page-footer__container">
+            <a class="img__link" href="#">
+              <img class="footer__img" src="/img/footer-logo.png">
+            </a> 
+          </div>
+          <div class="page-footer__container">
+            <ul class="page-footer__social-contacts">
+              <li class="social__item">
+                  <a class="social__link social__link_vkontakte" href="#">
+                    <!-- <span class="visually-hidden">Вконтакте</span> -->
+                    <img src="/img/m-vk.svg.png"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link_instagram" href="#">
+                      <!-- <span class="visually-hidden">Инстаграм</span> -->
+                    <img src="/img/m-insta.svg.png"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link_facebook" href="#">
+                    <!-- <span class="visually-hidden">Фейсбук</span> -->
+                    <img src="/img/m-fb.svg.png"></a>
+             </ul>
+          </div>
+          <div class="page-footer__container">
+            <a class="page-footer__academy-links">
+              <p class="page-footer__copyright">HTML Academy</p>
+              <img class="page-footer__icon" src="/img/htmlacademy.svg.png" width="30" height="30">
+           </a>
+          </div>
+       </div>
+      </div>
+     </footer>
     <script src="/js/modal.js"></script>
 </body>
 </html>
